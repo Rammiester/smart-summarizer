@@ -67,9 +67,7 @@ So here we are. Learning by doing — and sharing along the way.
 ---
 
 ## 📸 Demo (Week 1)
-
-![Right-click and popup](![image](https://github.com/user-attachments/assets/9bd1750e-f512-482e-9efc-45badfc52df6)
-)
+![Right-click and popup](https://github.com/user-attachments/assets/9bd1750e-f512-482e-9efc-45badfc52df6)
 
 ---
 
