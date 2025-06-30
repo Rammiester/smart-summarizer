@@ -1,23 +1,21 @@
-let latestSelectedText = "";
-
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
-    id: "summarize",
-    title: "🧠 Summarize with AI",
-    contexts: ["selection"]
+    id: "summarize-text",
+    title: "\ud83e\udde0 Summarize with AI",
+    contexts: ["selection"],
   });
 });
 
+let selectedText = "";
+
 chrome.contextMenus.onClicked.addListener((info, tab) => {
-  if (info.menuItemId === "summarize") {
-    latestSelectedText = info.selectionText || "";
-    console.log("You selected:", latestSelectedText);
+  if (info.menuItemId === "summarize-text") {
+    selectedText = info.selectionText || "";
   }
 });
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.type === "GET_SELECTED_TEXT") {
-    sendResponse({ selectedText: latestSelectedText });
+    sendResponse({ selectedText });
   }
-  return true;
 });

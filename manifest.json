@@ -1,22 +1,23 @@
 {
-    "manifest_version": 3,
-    "name": "Smart Summarizer",
-    "version": "1.0",
-    "description": "A Chrome extension that summarizes web pages using AI.",
-    "action": {
-        "default_popup": "popup.html",
-        "default_icon": {
-            "16": "images/icon.png",
-            "48": "images/icon.png",
-            "128": "images/icon.png"
-        }
-    },
-    "permissions": [
-        "contextMenus",
-        "activeTab",
-        "scripting"
-    ],
-    "background": {
-        "service_worker": "background.js"
+  "manifest_version": 3,
+  "name": "Smart Summarizer",
+  "version": "1.0",
+  "description": "Summarize text on webpages using AI.",
+  "permissions": ["contextMenus", "activeTab", "scripting", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
     }
+  },
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  }
 }
