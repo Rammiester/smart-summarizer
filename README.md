@@ -93,4 +93,4 @@ GitHub: [@Rammiester](https://github.com/Rammiester)
 ---
 ## 📄 License 
 
-This project is licensed under the [MIT License](https://github.com/Rammiester).
+This project is licensed under the [CC BY-NC 4.0 License](LICENSE). 
