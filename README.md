@@ -11,6 +11,7 @@ Smart Summarizer is a lightweight Chrome extension powered by Google's Gemini AP
 - 🧠 **Gemini API Integration:** Uses Google's Gemini 2.0 model for accurate summaries.
 - 🎨 **Summary Styles:** Choose from:
   - Default (Short paragraph)
+  
   - ELI5 (Explain Like I'm 5)
   - Bulleted Summary
   - Tweet (<280 characters)
@@ -24,9 +25,17 @@ Smart Summarizer is a lightweight Chrome extension powered by Google's Gemini AP
 
 ## 📸 Screenshots
 
-![Smart Summarizer UI - Light & Dark Mode](screenshots/smart-summarizer-ui.png)
+### 🔆 Light Mode – Summary Tab
+![Light Mode](images/popup-light.png)
 
-> _Include screenshot under `/screenshots` folder_
+### 🌙 Dark Mode – Summary Tab
+![Dark Mode](images/popup-dark.png)
+
+### ⚙️ Settings Tab
+![Settings](images/settings-tab.png)
+
+### 🕒 History Tab
+![History](images/history-tab.png)
 
 ---
 
