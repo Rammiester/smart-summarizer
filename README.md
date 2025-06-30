@@ -1,77 +1,96 @@
-# 🧠 Smart Summarizer — Chrome Extension
+# 🚀 Smart Summarizer – Chrome Extension
 
-**Smart Summarizer** is a Chrome Extension that lets users quickly summarize selected text on any webpage using AI (OpenAI integration coming soon).
-
-This project is part of a personal 2-week challenge to **build and learn in public** using JavaScript, Chrome APIs, and AI.
-
-GitHub Repo: [github.com/Rammiester/smart-summarizer](https://github.com/Rammiester/smart-summarizer)
+Smart Summarizer is a lightweight Chrome extension powered by Google's Gemini API. It allows you to **instantly summarize selected text on any webpage** into easy-to-digest formats like bullet points, ELI5 explanations, or tweet-sized bites — all within a clean, modern popup UI.
 
 ---
 
-## 📌 Features (Week 1)
+## ✨ Features
 
-✅ Highlight text on any webpage  
-✅ Right-click to access a custom context menu: **“🧠 Summarize with AI”**  
-✅ Selected text is captured and stored via background script  
-✅ Popup UI fetches and displays the selected text using message passing
+- 🔍 **Select & Summarize:** Instantly summarizes any selected webpage text.
 
----
-
-## 💡 How It Works (So Far)
-
-1. User selects text on a webpage  
-2. Right-click → selects "Summarize with AI"  
-3. Background script stores the selected text  
-4. When the popup is opened, it requests the stored text from background.js  
-5. The popup displays the selected text as a placeholder for the AI summary
-
----
-
-## 📦 Tech Stack
-
-- Manifest V3 Chrome Extension  
-- JavaScript (Vanilla)  
-- Chrome APIs: `contextMenus`, `runtime.sendMessage`  
-- HTML/CSS (for popup UI)
+- 🧠 **Gemini API Integration:** Uses Google's Gemini 2.0 model for accurate summaries.
+- 🎨 **Summary Styles:** Choose from:
+  - Default (Short paragraph)
+  - ELI5 (Explain Like I'm 5)
+  - Bulleted Summary
+  - Tweet (<280 characters)
+- 🕹️ **Tab Interface:** Clean tabbed UI for Summary, History, and Settings.
+- 🧾 **History Tab:** Automatically stores your last 3 summaries.
+- 🌙 **Dark Mode Support:** Toggle between light and dark themes.
+- 🔁 **Manual Dark Mode Toggle** with animated transitions.
+- 📋 **One-click Copy:** Copy summary with one tap.
 
 ---
 
-## 🛠️ Project Structure
-```└── smart-summarizer/
-├── manifest.json
-├── background.js
-├── popup.html
-├── popup.js
-├── images/
-│ └── icon.png
-└── README.md
-```
+## 📸 Screenshots
+
+![Smart Summarizer UI - Light & Dark Mode](screenshots/smart-summarizer-ui.png)
+
+> _Include screenshot under `/screenshots` folder_
 
 ---
 
-## 🚧 Coming in Week 2
+## 🔧 Installation
 
-- Integrate OpenAI API to generate summaries  
-- Display AI response in popup  
-- Handle API errors and loading states  
-- Experiment with different summary styles (tweet-size, ELI5, etc.)
+1. Clone or download this repo:
+   ```bash
+   git clone https://github.com/Rammiester/smart-summarizer.git
+   ```
+2. Go to `chrome://extensions/` in your Chrome browser.
 
----
-
-## 🙌 Why This Project?
-
-I wanted to stay consistent with my learning and apply concepts hands-on.  
-A friend simply said, *"Build something to keep the momentum going."*  
-So here we are. Learning by doing — and sharing along the way.
+3. Enable Developer mode (top-right toggle).
+4. Click Load unpacked and select the project folder.
+5. Add your Gemini API Key under the Settings tab in the extension popup.
 
 ---
 
-## 📸 Demo (Week 1)
-![Right-click and popup](https://github.com/user-attachments/assets/9bd1750e-f512-482e-9efc-45badfc52df6)
+## 🔑 Get a Gemini API Key
+
+1. Go to: [Google AI Studio](https://makersuite.google.com/app)
+
+2. Create a new API key from the Gemini model dashboard.
+3. Paste it into the extension’s Settings tab.
 
 ---
 
-## 🏷️ Tags
+## 🧪 How to Use
 
-`#chrome-extension` `#javascript` `#openai` `#buildinpublic` `#learningbydoing`
+1. Select any text on a webpage.
 
+2. Click the Smart Summarizer extension icon.
+3. Your summary appears instantly in the popup.
+4. Change the style or copy the result — all from one place.
+
+---
+
+## 💡Roadmap & Ideas
+
+- ✅ Local history (last 3 summaries)
+- ✅ Manual dark mode toggle
+- ⏳ Download summary to .txt (coming)
+- ⏳ Keyboard shortcut for instant summarization
+
+- ⏳ Auto-save summaries with titles
+- ⏳ Chrome Web Store publishing
+---
+## 🧰 Tech Stack
+- HTML5, CSS3 (vanilla)
+
+- JavaScript (ES6+)
+
+- Chrome Extension APIs (storage, runtime)
+
+- Google Gemini API
+
+---
+
+## 👨‍💻 Author
+
+Ramit Kr.  Gupta
+
+GitHub: [@Rammiester](https://github.com/Rammiester)
+
+---
+## 📄 License 
+
+This project is licensed under the [MIT License](https://github.com/Rammiester).
